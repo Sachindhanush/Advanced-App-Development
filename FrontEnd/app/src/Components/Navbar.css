@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  width: 97%;
+  left: 0%;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: -500px; /* Adjust size as needed */
+  height: auto;
+  margin-right: -700px; /* Add spacing between logo and text */
+}
+
+.navbar-right {
+  display: flex;
+}
+
+.navbar-right span {
+  margin-left: 20px;
+  color: goldenrod;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif; /* Use the imported Google font */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
