@@ -1,60 +1,43 @@
-import React, { useState } from 'react';
-import './register.css';
+import React from 'react'
+import "./login.css"
+import { Link } from 'react-router-dom'
 
-const Register = () => {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
-
-  const handleRegister = () => {
-    console.log('Registering with:', username, email, firstName, lastName, password);
-  };
+export default function Register() {
 
   return (
-    <div className="register-container">
-      <h2>Register</h2>
-      <input
-        type="text"
-        placeholder="Username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-      />
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="First Name"
-        value={firstName}
-        onChange={(e) => setFirstName(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="Last Name"
-        value={lastName}
-        onChange={(e) => setLastName(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Confirm Password"
-        value={confirmPassword}
-        onChange={(e) => setConfirmPassword(e.target.value)}
-      />
-      <button onClick={handleRegister}>Register</button>
+    <div className='fulllogin'>
+    <div className="login">
+    <div className="form">
+    <div className="box">
+      <div className="header">
+      <img width="64" height="64" src="https://img.icons8.com/external-justicon-lineal-justicon/64/external-gift-thanksgiving-justicon-lineal-justicon.png" alt="external-gift-thanksgiving-justicon-lineal-justicon"/>
+      <h1>SIGN UP</h1>
+      </div>
+    
+      <form>
+        <div className="input">
+          <i className="fa-solid fa-user"></i>
+          <input type="text"  placeholder="Name" />
+        </div>
+        <div className="input">
+        <i className="fa-solid fa-envelope"></i>
+        <input type="email"  placeholder="Email" />
+      </div>
+        <div className="input">
+          <i className="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Password" />
+        </div>
+        <div className="input">
+          <i className="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Confirm Password" />
+        </div>
+        <Link to="/"><input className="signup-btn" type="submit" value="SIGNUP" /></Link>
+      </form>
+   <Link to="/"> <p style={{textDecoration:'none'}} > Already Have an account? Login</p></Link>
+      
     </div>
-  );
-};
-
-export default Register;
+    </div>
+    </div>
+    </div>
+  )
+}

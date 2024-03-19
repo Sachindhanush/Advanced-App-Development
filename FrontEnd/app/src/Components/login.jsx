@@ -1,32 +1,35 @@
-import React, { useState } from 'react';
-import './login.css';
+import React from 'react'
+import "./login.css"
+import { Link } from 'react-router-dom'
 
-const Login = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleLogin = () => {
-    console.log('Logging in with:', username, password);
-  };
+export default function Login() {
 
   return (
-    <div className="login-container">
-      <h2>Login</h2>
-      <input
-        type="text"
-        placeholder="Username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button onClick={handleLogin}>Login</button>
-    </div>
-  );
-};
+    <div className='fulllogin'>
+    <div className="login">
+    <div className="form">
+    <div className="box">
+      <div className="header">
+      <img width="64" height="64" src="https://img.icons8.com/external-justicon-lineal-justicon/64/external-gift-thanksgiving-justicon-lineal-justicon.png" alt="external-gift-thanksgiving-justicon-lineal-justicon"/>
 
-export default Login;
+      <h1>LOGIN</h1>
+      </div>
+      <form>
+        <div className="input">
+          <i className="fa-solid fa-user"></i>
+          <input type="email" placeholder="Email" />
+        </div>
+        <div className="input">
+          <i className="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Password" />
+        </div>
+        <Link to="/home"  ><input className="signup-btn" type="submit" value="LOGIN" /></Link>
+      </form>
+    <br/>
+   <Link to="/register" style={{textDecoration:'none'}}><p > Don't have an Account? Register Now!</p></Link>
+    </div>
+    </div>
+    </div>
+    </div>
+  )
+}
