@@ -1,0 +1,32 @@
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc; /* Adding border */
+  border-radius: 10px; /* Adding border radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding shadow effect */
+  box-sizing: border-box; /* Ensuring padding and border are included in the width */
+  margin-top: 17%;
+}
+
+  
+  .profile-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .profile-info {
+    flex: 1;
+  }
+  
+  .profile-info p {
+    margin-bottom: 10px;
+  }
+  
+  .profile-picture img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+  }
+  

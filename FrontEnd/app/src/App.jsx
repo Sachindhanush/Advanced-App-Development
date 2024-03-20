@@ -12,6 +12,8 @@ import Watch from './Components/Watch'
 import Customize from './Components/Customize'
 import Cart from './Components/Cart'
 import Data from './Components/Data'
+import Profile from './Components/Profile'
+
 
 
 
@@ -34,6 +36,9 @@ function App() {
           <Route path='/cus' element={<Customize />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/data' element={<Data />} />
+          <Route path='/Profile' element={<Profile />} />
+          
+          
         
 
 
