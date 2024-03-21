@@ -31,7 +31,7 @@ export default function Homepage() {
                         </li>
                     </ul>
                 </nav>
-                {/* Showcase */}
+               
                 <header className="showcase">
                     <h2>Gifts Galore!</h2>
                     <p>Find the perfect gift for your loved ones.</p>
@@ -99,7 +99,7 @@ export default function Homepage() {
                     </div>
                 </div>
                 <section className="follow">
-                    {/* <video width={"60%"} className="video" src="https://web.giftcraft.net/icontact/umbraco/socialvideo_1920x680.mp4" autoPlay muted loop /> */}
+                   
                     <p>Follow us for more gift ideas!</p>
                     <a href="https://facebook.com">
                         <img src="https://i.ibb.co/LrVMXNR/social-fb.png" alt="Facebook" />

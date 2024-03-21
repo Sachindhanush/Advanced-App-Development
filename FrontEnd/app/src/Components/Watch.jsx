@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
-import './Watch.css'; 
+import './Watch.css';
 
 const Watch = () => {
     const watchData = [
@@ -76,11 +76,11 @@ const Watch = () => {
             link: '/watches',
             imageUrl: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRj_0ER_NgddstmO3LqXbDjvdDx4xjN5J6RUGqxfXF89poWfrL2P2kwORNlPzcqDzkrLzAevRhsnS2LIZCGzwsUg7wICaf7x_U6tNuMeZI&usqp=CAE',
         },
-       
+
     ];
 
     return (
-<div>
+        <div>
             <Navbar />
             <div className="text-center mb-4">
                 <br />
@@ -91,12 +91,12 @@ const Watch = () => {
             <div className="watch-container">
                 {watchData.map((watch, index) => (
                     <div className="watch-item col-lg-3 col-md-4 col-sm-6" key={index} >
-                        <div className="card" style={{maxHeight:'auto'}}>
+                        <div className="card" style={{ maxHeight: 'auto' }}>
                             <a href={watch.link}>
-                                <img alt={watch.title} className="card-img-top" src={watch.imageUrl} style={{minHeight:'300px',maxHeight:'300px'}}/>
+                                <img alt={watch.title} className="card-img-top" src={watch.imageUrl} style={{ minHeight: '300px', maxHeight: '300px' }} />
                             </a>
                             <div className="card-body">
-                                <h5 className="card-title" style={{maxHeight:'40px'}}>{watch.title}</h5>
+                                <h5 className="card-title" style={{ maxHeight: '40px' }}>{watch.title}</h5>
                                 <p className="card-text">Price: ₹{watch.price}</p>
                                 <div className="button-group d-flex justify-content-between">
                                     <a href="#" className="btn btn-success flex-fill">Add to Cart</a>
